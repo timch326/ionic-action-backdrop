@@ -1,0 +1,12 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <td-cards>
+      <td-card ng-repeat="text in texts | limitTo: 1"
+        on-destroy="spliceArray()">
+        <div class="a-card">
+          {{text}}
+        </div>
+      </td-card>
+    </td-cards>
+  </ion-content>
+</ion-view>

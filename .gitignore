@@ -1,0 +1,11 @@
+### Bower, Node, Ionic Libraries
+node_modules/
+lib/
+platforms/
+plugins/
+
+build/
+dist/
+
+### JetBrains
+.idea/

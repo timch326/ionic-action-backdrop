@@ -1,0 +1,37 @@
+.rg-action-button-active {
+  position: relative;
+  z-index: 12;
+  opacity: 1;
+}
+
+.action-backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.visible {
+    visibility: visible;
+
+  }
+}
+
+.action-row {
+  position: absolute;
+  bottom: $tabs-height;
+  width: 100%;
+  padding: 0 10vw;
+  text-align: center;
+  button {
+    margin: 0 10px;
+  }
+}
