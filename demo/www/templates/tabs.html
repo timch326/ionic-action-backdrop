@@ -11,10 +11,10 @@ navigation history that also transitions its views in and out.
   </ion-tab>
 
   <!-- New Tab -->
-  <action-tab icon-off="ion-plus-circled assertive" icon-on="ion-close-circled light">
-    <button class="button button-small button-light">Add List</button>
-    <button class="button button-small button-light">Add Card</button>
-    <button class="button button-small button-light">Add Friend</button>
+  <action-tab icon-off="ion-plus-circled assertive" icon-on="ion-close-circled light" ng-controller="ActionsCtrl">
+    <button class="button button-small button-light" ng-click="trigger()">Add List</button>
+    <button class="button button-small button-light" ng-click="trigger()">Add Card</button>
+    <button class="button button-small button-light" ng-click="trigger()">Add Friend</button>
   </action-tab>
 
   <!-- Chats Tab -->
